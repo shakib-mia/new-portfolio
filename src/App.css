@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  @apply bg-gradient-to-br from-primary-900 to-primary-500 text-white-gray selection:bg-secondary-400 selection:text-white overflow-x-hidden cursor-none;
+}
+
+#mouse {
+  @apply w-4 h-4;
+}
+
+a.active {
+  @apply text-secondary;
+}
+
+a {
+  @apply cursor-none;
+}
+
+a:hover ~ #mouse {
+  @apply !w-8 !h-8;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
